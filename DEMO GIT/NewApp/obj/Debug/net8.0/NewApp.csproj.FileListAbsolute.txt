@@ -1,0 +1,15 @@
+C:\BTTHUCHANH\DEMO GIT\NewApp\bin\Debug\net8.0\NewApp.exe
+C:\BTTHUCHANH\DEMO GIT\NewApp\bin\Debug\net8.0\NewApp.deps.json
+C:\BTTHUCHANH\DEMO GIT\NewApp\bin\Debug\net8.0\NewApp.runtimeconfig.json
+C:\BTTHUCHANH\DEMO GIT\NewApp\bin\Debug\net8.0\NewApp.dll
+C:\BTTHUCHANH\DEMO GIT\NewApp\bin\Debug\net8.0\NewApp.pdb
+C:\BTTHUCHANH\DEMO GIT\NewApp\obj\Debug\net8.0\NewApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\BTTHUCHANH\DEMO GIT\NewApp\obj\Debug\net8.0\NewApp.AssemblyInfoInputs.cache
+C:\BTTHUCHANH\DEMO GIT\NewApp\obj\Debug\net8.0\NewApp.AssemblyInfo.cs
+C:\BTTHUCHANH\DEMO GIT\NewApp\obj\Debug\net8.0\NewApp.csproj.CoreCompileInputs.cache
+C:\BTTHUCHANH\DEMO GIT\NewApp\obj\Debug\net8.0\NewApp.sourcelink.json
+C:\BTTHUCHANH\DEMO GIT\NewApp\obj\Debug\net8.0\NewApp.dll
+C:\BTTHUCHANH\DEMO GIT\NewApp\obj\Debug\net8.0\refint\NewApp.dll
+C:\BTTHUCHANH\DEMO GIT\NewApp\obj\Debug\net8.0\NewApp.pdb
+C:\BTTHUCHANH\DEMO GIT\NewApp\obj\Debug\net8.0\NewApp.genruntimeconfig.cache
+C:\BTTHUCHANH\DEMO GIT\NewApp\obj\Debug\net8.0\ref\NewApp.dll
