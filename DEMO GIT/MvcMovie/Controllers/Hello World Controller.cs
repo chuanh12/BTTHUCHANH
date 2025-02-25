@@ -5,10 +5,17 @@ namespace MvcMovie.Controllers
     public class HelloWorldController : Controller
     { 
         // GET: /HelloWorld/
-        public string Index()
+        public ActionResult Index()
         {
-            return "This is my default action...";
+            return View();
         } 
+[HttpPost]
+public IActionResult Index(string full name, string address)
+{
+    string strOutput="xin chào"+full name+"đến từ"+ address;
+    ViewBag.Message= strOutput;
+    return View();
+}
         // GET: /HelloWorld/Welcome/ 
 
         public string Welcome()

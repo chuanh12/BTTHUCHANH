@@ -1,0 +1,26 @@
+@model BMICalculationModel
+
+@{
+    ViewBag.Title = "Tính chỉ số BMI";
+}
+
+<h2>Tính chỉ số BMI</h2>
+
+@using (Html.BeginForm("CalculateBMI", "BMI", FormMethod.Post))
+{
+    <div>
+        <label for="Weight">Cân nặng (kg): </label>
+        @Html.TextBoxFor(model => model.Weight)
+    </div>
+    <div>
+        <label for="Height">Chiều cao (m): </label>
+        @Html.TextBoxFor(model => model.Height)
+    </div>
+    <button type="submit">Tính BMI</button>
+}
+
+@if (ViewBag.BMI != null)
+{
+    <h3>Chỉ số BMI của bạn là: @ViewBag.BMI</h3>
+    <p>@ViewBag.Message</p>
+}
