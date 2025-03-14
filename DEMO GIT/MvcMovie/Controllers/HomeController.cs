@@ -4,6 +4,7 @@ using MvcMovie.Models;
 
 namespace MvcMovie.Controllers;
 
+
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
@@ -22,10 +23,12 @@ public class HomeController : Controller
     {
         return View();
     }
-
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
-    {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+    [HttpPost]
+    public IActionResult Index(String fullname, string address)
+    { string strOutput= "xin chào " + fullname+"đếntừ"+address;
+    ViewBag.mesage= strOutput;
+    return View();
     }
+
+    
 }
