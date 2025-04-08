@@ -1,17 +1,14 @@
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-
-namespace MvcMovie.Models
+namespace DemoMVC.Models
 {
-[Table("Persion")]  
-public class Persion
-{
-[Key]
-public required string PersionId {get;set;}
-public required string Fullname {get;set;}
-public required string Address{get;set;}
-// Employee class kế thừa từ Person
+    public class Person
+    {
+        [Key]
+        public string Id { get; set; }
+        [MinLength(3)]
+        public string FullName { get; set; }
+        public string? Address { get; set; }
+    }
+}
 
 
-}
-}

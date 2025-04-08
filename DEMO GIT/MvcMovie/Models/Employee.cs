@@ -1,10 +1,11 @@
-using MvcMovie.Models;
-
+using System.ComponentModel.DataAnnotations;
 namespace MvcMovie.Models
 {
-    public class Employee : Persion
+    public class Employee : Person
     {
-        public required string EmployeeId { get; set; }  // Mã nhân viên
-        public int Age { get; set; }            // Tuổi
+        public int EmpId { get; set; }
+        public string Department { get; set; }
+        [DataType(DataType.EmailAddress)]
+        public string Email { get; set; }
     }
 }
