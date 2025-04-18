@@ -1,0 +1,21 @@
+@model IEnumerable<MvcMovie.Models.Person>
+
+<h2>Kết quả Import</h2>
+
+<p>@ViewBag.Message</p>
+
+<table border="1">
+    <tr>
+        <th>Id</th>
+        <th>FullName</th>
+        <th>Email</th>
+    </tr>
+    @foreach (var person in Model)
+    {
+        <tr>
+            <td>@person.Id</td>
+            <td>@person.FullName</td>
+            <td>@person.Email</td>
+        </tr>
+    }
+</table>

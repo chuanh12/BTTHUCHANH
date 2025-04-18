@@ -1,0 +1,26 @@
+@if (ViewBag.ExcelData != null)
+{
+    var table = (System.Data.DataTable)ViewBag.ExcelData;
+    <h3 class="mt-4">Dữ liệu đọc từ Excel:</h3>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                @foreach (System.Data.DataColumn col in table.Columns)
+                {
+                    <th>@col.ColumnName</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (System.Data.DataRow row in table.Rows)
+            {
+                <tr>
+                    @foreach (var item in row.ItemArray)
+                    {
+                        <td>@item</td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+}
